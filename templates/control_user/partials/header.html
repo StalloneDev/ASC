@@ -1,0 +1,57 @@
+{% load static %}
+ <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="{% url 'home' %}"><img src="{% static 'control_user/img/logo.png' %}" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="{% url 'home' %}">Accueil</a></li>
+                                <li><a href="{% url 'about' %}">About</a></li>
+                                <li><a href="{% url 'services' %}">Services</a></li>
+                                <li><a href="{% url 'streamings' %}">Streaming</a></li>
+                                
+                                <!-- <li><a href="#">Pages</a>
+                                    <ul class="dropdown">
+                                        <li><a href="{% url 'about' %}">About</a></li>
+                                        
+                                        <li><a href="{% url 'blog' %}">Blog</a></li>
+                                 
+                                    </ul>
+                                </li> -->
+                                <!-- <li><a href="{% url 'contact' %}">Contact</a></li> -->
+                                
+                                <!-- <li><a href="{% url 'streamings' %}">Streaming</a></li> -->
+                                <li><a href="{% url 'restaurant' %}">Restaurant</a></li>
+
+                                <li><a href="#">Connexion</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">Profile</a></li>
+                                        <li><a href="#">Logout</a></li>
+                                   
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- <div class="header__nav__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+<!-- Header End -->

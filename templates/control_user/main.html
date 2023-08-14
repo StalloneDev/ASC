@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Videograph Template">
+    <meta name="keywords" content="Videograph, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{%block title%} Accueil | {%endblock title%} ASC</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic|Merriweather:300,400italic,300italic,400,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'control_user/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'control_user/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'control_user/css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'control_user/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'control_user/css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'control_user/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'control_user/css/style.css' %}" type="text/css">
+
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'control_user/css/animates.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'control_user/css/icomoons.css' %}">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="{% static 'control_user/css/simple-line-iconss.css' %}">
+	
+	<link rel="stylesheet" href="{% static 'control_user/css/bootstrap-datetimepickers.min.css' %}">
+	
+	<link rel="stylesheet" href="{% static 'control_user/css/flexsliders.css' %}">
+	
+	<link rel="stylesheet" href="{% static 'control_user/css/bootstraps.css' %}">
+
+    <link rel="stylesheet" href="{% static 'control_user/css/styles.css' %}" type="text/css">
+
+    <script src="{% static 'control_user/js/modernizrs-2.6.2.min.js' %}"></script>
+
+
+    {% block extrastyle %}{% endblock extrastyle %}
+</head>
+
+    <body>
+        <!-- Page Preloder -->
+        <div id="preloder">
+            <div class="loader"></div>
+        </div>
+
+
+        <!-- start header -->
+        {% include 'control_user/partials/header.html' %}
+        <!-- header end -->
+        <!-- start content -->
+        {% block content %}
+        
+        {% endblock content %}
+        <!-- content end -->
+        <!-- Start Footer Area -->
+        {% include 'control_user/partials/footer.html' %}
+        <!-- End Footer area -->
+
+
+        <!-- Js Plugins -->
+        <script src="{% static 'control_user/js/jquery-3.3.1.min.js' %}"></script>
+        <script src="{% static 'control_user/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'control_user/js/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{% static 'control_user/js/mixitup.min.js' %}"></script>
+        <script src="{% static 'control_user/js/masonry.pkgd.min.js' %}"></script>
+        <script src="{% static 'control_user/js/jquery.slicknav.js' %}"></script>
+        <script src="{% static 'control_user/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'control_user/js/main.js' %}"></script>
+
+
+        <script src="{% static 'control_user/js/jquerys.min.js' %}"></script>
+        <!-- jQuery Easing -->
+        <script src="{% static 'control_user/js/jquery.easings.1.3.js' %}"></script>
+        <!-- Bootstrap -->
+        <script src="{% static 'control_user/js/bootstraps.min.js' %}"></script>
+        <!-- Bootstrap DateTimePicker -->
+        <script src="{% static 'control_user/js/moments.js' %}"></script>
+        <script src="{% static 'control_user/js/bootstraps-datetimepicker.min.js' %}"></script>
+        <!-- Waypoints -->
+        <script src="{% static 'control_user/js/jquery.waypointss.min.js' %}"></script>
+        <!-- Stellar Parallax -->
+        <script src="{% static 'control_user/js/jquery.stellars.min.js' %}"></script>
+
+        <!-- Flexslider -->
+        <script src="{% static 'control_user/js/jquery.flexsliders-min.js' %}"></script>
+        <script>
+            $(function () {
+            $('#date').datetimepicker();
+        });
+        </script>
+	<!-- Main JS -->
+	<script src="{% static 'restauration/js/mains.js' %}"></script>
+
+        {% block extrascript %}{% endblock extrascript %}
+    </body>
+
+</html>
